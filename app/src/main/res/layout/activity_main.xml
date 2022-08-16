@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/adc"
+    android:textAlignment="viewEnd">
+
+    <EditText
+        android:id="@+id/txtNama"
+        android:layout_width="320dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Masukan Nama"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNIDN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNIDN"
+        app:layout_constraintTop_toBottomOf="@+id/txtNIDN" />
+
+    <EditText
+        android:id="@+id/txtNIDN"
+        android:layout_width="320dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Masukan NIDN"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txthp"
+        android:layout_width="262dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNama"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlamat" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins"
+        android:text="Status"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <CheckBox
+        android:id="@+id/cmb2"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="S2"
+        app:buttonTint="@color/ungu"
+        app:layout_constraintStart_toEndOf="@+id/cmb1"
+        app:layout_constraintTop_toTopOf="@+id/cmb1" />
+
+    <CheckBox
+        android:id="@+id/cmb1"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="S1"
+        app:buttonTint="@color/ungu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/cmb3"
+        android:layout_width="106dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="45dp"
+        android:button="?android:attr/listChoiceIndicatorMultiple"
+        android:text="S3"
+        app:buttonTint="@color/ungu"
+        app:layout_constraintBottom_toBottomOf="@+id/cmb2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cmb2"
+        app:layout_constraintTop_toTopOf="@+id/cmb2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:text="Jenjang Pendidikan Yang telah dilulusi"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdjk5" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom3"
+        android:fontFamily="@font/poppins"
+        android:text="Close"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnDftr"
+        app:layout_constraintTop_toBottomOf="@+id/btnDftr" />
+
+    <Button
+        android:id="@+id/btnDftr"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/custom3"
+        android:fontFamily="@font/poppins"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdjk"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/txthp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/txthp">
+
+        <RadioButton
+            android:id="@+id/rdjk2"
+            android:layout_width="135dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Laki-laki"
+            app:buttonTint="@color/ungu"
+            app:layout_constraintEnd_toEndOf="@+id/txthp"
+            app:layout_constraintStart_toStartOf="@+id/rdjk"
+            app:layout_constraintTop_toBottomOf="@+id/txthp" />
+
+        <RadioButton
+            android:id="@+id/rdjk1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Perempuan"
+            android:textColorHighlight="@color/purple_200"
+            android:textColorLink="@color/purple_200"
+            android:textCursorDrawable="@color/purple_200"
+            app:buttonTint="@color/ungu"
+            app:layout_constraintBottom_toTopOf="@+id/txtTTL"
+            app:layout_constraintEnd_toStartOf="@+id/rdjk2"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/txthp"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Telepon"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/txtNama" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rdjk"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/rdjk"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtAlamat"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Alamat"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNama"
+        app:layout_constraintStart_toStartOf="@+id/txtNama"
+        app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom3"
+        android:fontFamily="@font/poppins"
+        android:text="Clear"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/btnDftr"
+        app:layout_constraintTop_toBottomOf="@+id/btnDftr" />
+
+    <RadioGroup
+        android:id="@+id/rdjk5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/rdjk">
+
+        <RadioButton
+            android:id="@+id/rdjk4"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:text="DPK"
+            app:layout_constraintTop_toTopOf="@+id/textView9"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <RadioButton
+            android:id="@+id/rdjk3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosen_Yayasan"
+            app:layout_constraintTop_toTopOf="@+id/rdjk4"
+            tools:layout_editor_absoluteX="217dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="FORM DATA DOSEN"
+        app:layout_constraintBottom_toTopOf="@+id/txtNIDN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
